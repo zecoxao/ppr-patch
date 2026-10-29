@@ -44,8 +44,8 @@ export PS5_PAYLOAD_SDK=/opt/ps5-payload-sdk
 make -j2
 ```
 
-The checked-in `ppr_profiles.inc` contains 55 unique PPR layouts and 89
-target-specific `FW + retail/testkit/devkit` mappings from 1.00 through 11.40,
+The checked-in `ppr_profiles.inc` contains 56 unique PPR layouts and 90
+target-specific `FW + retail/testkit/devkit` mappings from 1.00 through 11.60,
 including 6.02 and 9.05. Profiles that are byte-identical across targets share
 one layout entry, but the runtime still requires the exact target mapping. The separate
 `kmb_range_profiles.inc` contains the 32 verified KMB layouts from 4.00 through
@@ -302,7 +302,7 @@ make verify
 make host-test
 ```
 
-`make verify` checks all 55 unique layouts, all 89 target mappings and their
+`make verify` checks all 56 unique layouts, all 90 target mappings and their
 available source images, the three patch-version aliases, all thirteen selector sites and
 branch targets, the native AES and stock plaintext descriptor builders, the
 terminal SHA release/submit layout, executable-tail placement, exact FE/FF

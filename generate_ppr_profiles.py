@@ -17,10 +17,10 @@ EXPECTED_RELEASES = [
     (7, 40), (7, 60), (7, 61), (8, 0), (8, 20), (8, 40), (8, 60),
     (9, 0), (9, 5), (9, 20), (9, 40), (9, 60), (10, 0), (10, 1),
     (10, 20),
-    (10, 40), (10, 60), (11, 0), (11, 20), (11, 40),
+    (10, 40), (10, 60), (11, 0), (11, 20), (11, 40), (11, 60),
 ]
 
-# Discovery is deliberately limited to the reviewed 1.00-11.40 set.  Merely
+# Discovery is deliberately limited to the reviewed 1.00-11.60 set.  Merely
 # placing another MP4 in either archive root must not make it patchable.
 AVAILABLE_EXACT_RELEASES = tuple(EXPECTED_RELEASES)
 SOURCE_ALIASES = {

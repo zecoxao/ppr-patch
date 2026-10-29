@@ -409,7 +409,7 @@ def main():
 
     print(f"PPR profile verification passed: "
           f"{len(generator.EXPECTED_RELEASES)} releases from 1.00 through "
-          f"11.40, {len(expected_targets)} target profiles, exact sites, "
+          f"11.60, {len(expected_targets)} target profiles, exact sites, "
           "three ABIs, caves, aliases, and generated wrappers")
 
 

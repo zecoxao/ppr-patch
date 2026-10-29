@@ -46,8 +46,8 @@ export PS5_PAYLOAD_SDK=/opt/ps5-payload-sdk
 make -j2
 ```
 
-В `ppr_profiles.inc` записаны 55 уникальных PPR layout и 89 точных комбинаций
-`FW + retail/testkit/devkit` от 1.00 до 11.40, включая 6.02 и 9.05. Одинаковые
+В `ppr_profiles.inc` записаны 56 уникальных PPR layout и 90 точных комбинаций
+`FW + retail/testkit/devkit` от 1.00 до 11.60, включая 6.02 и 9.05. Одинаковые
 между target варианты ссылаются на один layout, но runtime всё равно требует
 наличия точной target-записи. В отдельном `kmb_range_profiles.inc` находятся 32
 проверенных KMB layout от 4.00 до 10.60. `make profiles` пересобирает обе
@@ -303,7 +303,7 @@ make verify
 make host-test
 ```
 
-`make verify` проверяет 55 уникальных layout, все 89 target-профилей и их
+`make verify` проверяет 56 уникальных layout, все 90 target-профилей и их
 доступные A53 ELF, три patch-version alias, тринадцать site
 selector и branch target,
 native AES и штатный plaintext descriptor builder, terminal SHA release/submit

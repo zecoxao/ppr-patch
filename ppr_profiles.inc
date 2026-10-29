@@ -2420,6 +2420,50 @@ static const struct ppr_profile ppr_profiles[] = {
         .dispatch_va = 0x04e5ad74ULL,
         .dispatch_stock = 0x97fff02dU,
     },
+    {
+        .firmware = 0x11600000U, .name = "11.60",
+        .abi = PPR_ABI_LATE, .merged_text = 0,
+        .cave_in_dev = 0,
+        .io_mapped_base = 0x04e28000ULL,
+        .io_file_size = 0x00034f00ULL, .io_mapped_size = 0x00035000ULL,
+        .io_sram_base = 0x00028000ULL,
+        .dev_mapped_base = 0x06410000ULL,
+        .dev_file_size = 0x00032010ULL, .dev_mapped_size = 0x00033000ULL,
+        .runtime_cave_va = 0x04e5cf00ULL,
+        .plaintext_cave_va = 0x04e5cf50ULL,
+        .helper_va = 0x04e5abe4ULL,
+        .precheck_normal_va = 0x04e5ac50ULL,
+        .precheck_special_va = 0x04e5ac84ULL,
+        .common_error_va = 0x04e5ada0ULL,
+        .dispatch_native_va = 0x04e56e28ULL,
+        .aes_descriptor_va = 0x04e2ae04ULL,
+        .plaintext_descriptor_va = 0x04e2afd0ULL,
+        .plaintext_direct_va = 0x04e5ba10ULL,
+        .plaintext_idma_va = 0x04e5786cULL,
+        .sha_wait_idma_aes_va = 0x04e57ce4ULL,
+        .sha_authenticate_va = 0x04e57de0ULL,
+        .submit_idma_va = 0x04e559b8ULL,
+        .common_return_va = 0x04e5aea0ULL,
+        .call_va = {
+            0x04e49288ULL, 0x04e498e0ULL, 0x06413d2cULL,
+            0x06414e64ULL, 0x064150f8ULL, 0x06415360ULL,
+            0x06416924ULL, 0x06421a78ULL, 0x06423aa8ULL,
+            0x064260e0ULL,
+        },
+        .call_stock = {
+            0x94004657U, 0x940044c1U, 0x97a91baeU, 0x97a91760U,
+            0x97a916bbU, 0x97a91621U, 0x97a910b0U, 0x97a8e45bU,
+            0x97a8dc4fU, 0x97a8d2c1U,
+        },
+        .aes_site_va = {0x04e56f84ULL, 0x04e570acULL},
+        .aes_site_stock = {0x97ff4fa0U, 0x97ff4f56U},
+        .sha_auth_site_va = 0x04e5ae6cULL,
+        .sha_auth_site_stock = 0x97fff3ddU,
+        .precheck_va = 0x04e5ac4cULL,
+        .precheck_stock = 0x35000abcU,
+        .dispatch_va = 0x04e5ad74ULL,
+        .dispatch_stock = 0x97fff02dU,
+    },
 };
 
 static const struct ppr_target_profile ppr_target_profiles[] = {
@@ -2512,4 +2556,5 @@ static const struct ppr_target_profile ppr_target_profiles[] = {
     { 0x11200000U, PPR_TARGET_RETAIL, 53U }, /* 11.20 retail */
     { 0x11400000U, PPR_TARGET_RETAIL, 54U }, /* 11.40 retail */
     { 0x11400000U, PPR_TARGET_DEVKIT, 54U }, /* 11.40 devkit */
+    { 0x11600000U, PPR_TARGET_RETAIL, 55U }, /* 11.60 retail */
 };
